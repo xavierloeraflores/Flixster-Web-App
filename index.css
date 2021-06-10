@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding:0px;
+    border:0px;
+}
+
 body{
     display: flex;
     flex-flow:column nowrap;
@@ -31,7 +37,13 @@ header {
 #search-form input {
     flex:1;
     max-width: 700px;
+    font-size: 16px;
+    background-color:#1D1D1E ;
+    color: #D3D3D4;
 }
+
+
+
 
 /* ////////////////////
         Main
@@ -39,15 +51,56 @@ header {
 main {
     display: flex;
     flex-flow:column nowrap;
+    align-items: center;
 }
+/* //// Movie Page //// */
+#movie-page{
+    align-self: flex-start;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    left: 0;
+    top:0;
+    background-color: #d3d3d49c;
+    display: flex;
+    flex-flow:column nowrap;
+    display: none;
+}
+
+#movie-page #closeBtn{
+
+    font-size: 32px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+
+}
+
+#movie-page .poster {
+    width:350px;
+}
+#movie-page .star{
+    width:30px;
+}
+
+
+
+
+
+
+
+
+
+/* //// Movie Grid //// */
 #movies {
+    width:80%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 .movie {
-    width: 350px;
+    flex: 1 0 350px;
     display: flex;
     flex-flow: column nowrap;
     font-size: 24px;
@@ -63,7 +116,7 @@ main {
     /* Makes the box grow while keeping them the same */
 }
 
-.poster {
+.movie .poster {
     align-self: flex-end;
     width:100%;
     border-radius: 3%;
@@ -77,14 +130,17 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.star {
+.movie .star {
     height:  30px;
     margin-right: 8px;
 }
-.rating {
+.movie .rating {
     display: flex;
     align-items: center;
 }
+
+
+
 
 #loadBtn {
     height: 100px;
