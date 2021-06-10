@@ -53,16 +53,21 @@ main {
     font-size: 24px;
     margin: 16px;
 }
-
-.movie:hover {
-    box-shadow: 0px 0px 20px white;
-    /* Makes the box grow while keeping them the same */
+.movie:hover{
     width: 355px;
     margin: 10px 13.5px;
 }
 
+.movie:hover .poster{
+    box-shadow: 0px 0px 20px white;
+    /* Makes the box grow while keeping them the same */
+}
+
 .poster {
+    align-self: flex-end;
     width:100%;
+    border-radius: 3%;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .movie-bar {
@@ -81,4 +86,8 @@ main {
     align-items: center;
 }
 
-
+#loadBtn {
+    height: 100px;
+    width: 300px;
+    align-self: center;
+}
