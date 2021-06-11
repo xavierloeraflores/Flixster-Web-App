@@ -11,7 +11,7 @@
     <header>
         <div id="branding">
 
-            <a id="home" href=" "><img id="logo" src="https://www.clipartmax.com/png/middle/47-474783_popcorn-comments-popcorn-icon-png.png" alt="Flixster Icon"/>
+            <a id="home" href=" "><img id="logo" src="https://cdn3.iconfinder.com/data/icons/cinema-and-entertainment/100/cinema-03-512.png" alt="Flixster Icon"/>
             <span id="siteName">Flixster</span></a>
         </div>
         <form id="search-form">
@@ -59,48 +59,6 @@
 </body>
 <script src="index.js"></script>
 <script>
-    // 2. This code loads the IFrame Player API code asynchronously.
-    let tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    let firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    let player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        height: '390',
-        width: '640',
-        videoId: 'M7lc1UVf-VE',
-        playerVars: {
-          'playsinline': 1
-        },
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
-
-    // 4. The API will call this function when the video player is ready.
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
-
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    let done = false;
-    function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
-        done = true;
-      }
-    }
-    function stopVideo() {
-      player.stopVideo();
-    }
   </script>
 </html>
