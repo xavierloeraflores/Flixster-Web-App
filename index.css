@@ -21,10 +21,25 @@ header {
     flex-flow:row nowrap;
     justify-content: space-between;
     width: 100vw;
+    padding:8px ;
+}
+#home{
+    color: white;
+    text-decoration: none;
+}
+#logo {
+    width: 50px;
 }
 
-#branding {
+#home {
+    display: flex;
+    flex-flow: row wrap;
     width:150px;
+    align-items: center ;
+}
+#siteName{
+    margin-left: 8px;
+    font-size: 28px;
 }
 #search-form{
 
@@ -41,6 +56,14 @@ header {
     background-color:#1D1D1E ;
     color: #D3D3D4;
 }
+#searchBtn {
+    border-radius: 5%;
+    background-color: black;
+    color:white;
+    border: 1px lightgray solid;
+    font-size: 30px;
+}
+
 
 
 
@@ -60,37 +83,42 @@ main {
 
 /* //// Movie Page //// */
 #movie-page{
-    align-self: flex-start;
     width: 100vw;
     height: 100vh;
     position:fixed;
     left: 0;
     top:0;
-    background-color: #e1e1e1b3;
+    background-color: #e1e1e1e7;
     color:black;
     display: none;
-    flex-flow:column nowrap;
-
+    padding: 16px;
 }
 
 #movie-page #closeBtn{
-
     font-size: 32px;
     background-color: black;
     color: white;
     padding: 8px;
-
-}
-
-#movie-page .poster {
-    width:350px;
 }
 
 #movie-page .backdrop {
-    width:500px;
+    align-self: center;
+    width:80vw;
+    left: 0;
+    top: 0;
+    position:relative;
+    z-index: -1;
+}
+
+#movie-page .poster {
+    width:20%;
+    min-width: 300px;
+    position: relative;
+    bottom:300px;
+    margin-bottom: none;
 }
 #movie-page .star{
-    width:30px;
+    height: 30px;
 }
 
 #movie-details {
@@ -98,12 +126,33 @@ main {
     flex-flow: column nowrap;
 }
 #movie-details #info{
+    margin-top: 16px;
+    margin-left: 15px;
     display:flex;
+    flex-flow: column nowrap;
+    flex: 1 0 175px;
+}
+#row2 {
+    display: flex;
     flex-flow: row nowrap;
-
+    margin-bottom: -300px;
+    margin-right: 32px;
+}
+#row2 #rating{
+    float:right;
 }
 
 
+#divider{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#player-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
 
 
 
@@ -161,7 +210,14 @@ main {
 
 
 #loadBtn {
-    height: 100px;
-    width: 300px;
+    display: block;
+    height: 75px;
+    width: 200px;
     align-self: center;
+    border-radius: 5%;
+    background-color: #1D1D1E;
+    color:white;
+    border: 1px lightgray solid;
+    font-size: 30px;
+    margin-bottom: 16px;
 }
