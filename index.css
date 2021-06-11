@@ -53,6 +53,11 @@ main {
     flex-flow:column nowrap;
     align-items: center;
 }
+
+
+
+
+
 /* //// Movie Page //// */
 #movie-page{
     align-self: flex-start;
@@ -61,10 +66,11 @@ main {
     position:fixed;
     left: 0;
     top:0;
-    background-color: #d3d3d49c;
-    display: flex;
-    flex-flow:column nowrap;
+    background-color: #e1e1e1b3;
+    color:black;
     display: none;
+    flex-flow:column nowrap;
+
 }
 
 #movie-page #closeBtn{
@@ -79,11 +85,23 @@ main {
 #movie-page .poster {
     width:350px;
 }
+
+#movie-page .backdrop {
+    width:500px;
+}
 #movie-page .star{
     width:30px;
 }
 
+#movie-details {
+    display: flex;
+    flex-flow: column nowrap;
+}
+#movie-details #info{
+    display:flex;
+    flex-flow: row nowrap;
 
+}
 
 
 
