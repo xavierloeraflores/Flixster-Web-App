@@ -27,11 +27,12 @@ Deployed Application (optional): [Flixster Deployed Site](https://xavierloeraflo
 
 ### Walkthrough Video
 
-<iframe 
-src="https://im.ezgif.com/tmp/ezgif-1-3afb8bc4e02f.gif" frameborder="0" 
-webkitallowfullscreen mozallowfullscreen allowfullscreen 
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-</iframe>
+
+![Walkthorugh](https://media.giphy.com/media/PH479yo98rTFoge3SV/giphy.gif)
+
+Backup:
+https://im.ezgif.com/tmp/ezgif-1-3afb8bc4e02f.gif
+
 
 ### Reflection
 
@@ -61,4 +62,4 @@ I would like to:
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+I would like to shoutout Leonel and Nicholas. It was helpful and fun bouncing off ideas with them. 
